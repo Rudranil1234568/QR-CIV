@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="head">
+        <img  src="https://www.cloudinvitro.app/public/assets/img/logo.png" alt="Cloudinvitro Logo">
+        <h2 > Generate Self-Registration QR Code For Your Clinic</h2>
+    </div>
+    <div class="container">
+        <div class="input-section">
+            <div class="text-input">
+                <h2><strong>1.</strong>Fill Your Clinic Data</h2>
+
+                <input type="text" id="urlInput" placeholder="Enter self registration URL here" required>
+                <input type="text" id="fileNameInput" placeholder="Enter Your Clinic Name" required>
+            </div>
+            <div class="file-input">
+                <h2 style="text-align: center;"><strong>2.</strong>Insert Your Clinic Logo</h2>
+                <div id="dragDropArea" class="drag-drop-area">
+                    <p>Drag & Drop your clinic logo here or click to upload</p>
+                    <input type="file" id="logoInput" accept="image/*" style="display: none;">
+                </div>
+            </div>
+            <div class="gen-input">
+                <h3 style="text-align: center; margin: 20px 50px 10px 50px"><strong>3.</strong>Click The Button Below To
+                    Generate Your Self-Regiration QR Code</h3>
+                <button style="margin: 0 0 0 20px;" onclick="generateQRCode()">Generate your clinic QR Code </button>
+            </div>
+        </div>
+        <div class="qrbackground">
+            <h2><strong>4.</strong>Download QR Code</h2>
+            <div class="qr-section">
+                <canvas id="qrCanvas" class="fade-in"></canvas>
+                <div id="qrText" class="qr-text"></div>
+                <button id="downloadBtn" style="display: none;" onclick="downloadQR()">Download QR Code</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+    <div id="footer">
+        <div class="footer-content">
+            <span>Powered by</span>
+            <a href="https://www.cloudinvitro.app/" target="_blank"><img src="https://www.cloudinvitro.app/public/assets/img/logo.png" alt="civ Logo"
+                    class="logo1"></a>
+        </div>
+   </div>
+</body>
+
+</html>
