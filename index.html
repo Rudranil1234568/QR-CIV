@@ -10,8 +10,8 @@
 
 <body>
     <div class="head">
-        <img  src="https://www.cloudinvitro.app/public/assets/img/logo.png" alt="Cloudinvitro Logo">
-        <h2 > Generate Self-Registration QR Code For Your Clinic</h2>
+        <img src="https://www.cloudinvitro.app/public/assets/img/logo.png" alt="Cloudinvitro Logo">
+        <h2> Generate Self-Registration QR Code For Your Clinic</h2>
     </div>
     <div class="container">
         <div class="input-section">
@@ -19,13 +19,21 @@
                 <h2><strong>1.</strong>Fill Your Clinic Data</h2>
 
                 <input type="text" id="urlInput" placeholder="Enter self registration URL here" required>
+                <p>Know your Clinic self registration URL</p>
+                <iframe
+                    src="https://player.cloudinary.com/embed/?cloud_name=dwlnkmtqq&public_id=xrkqpbswpoot1obvdzet&profile=cld-default"
+                    width="640" height="360" style="height: auto; width: 100%; aspect-ratio: 640 / 360;"
+                    allow="autoplay; fullscreen; encrypted-media; picture-in-picture" allowfullscreen
+                    frameborder="0"></iframe>
                 <input type="text" id="fileNameInput" placeholder="Enter Your Clinic Name" required>
             </div>
             <div class="file-input">
                 <h2 style="text-align: center;"><strong>2.</strong>Insert Your Clinic Logo</h2>
-                <div id="dragDropArea" class="drag-drop-area">
+                <div id="dragDropArea" class="drag-drop-area"
+                    style="border: 2px dashed #aaa; padding: 20px; text-align: center; cursor: pointer;">
                     <p>Click to upload Your Clinic Logo</p>
-                    <input type="file" id="logoInput" accept="image/*" style="display: none;">
+                    <input type="file" id="logoInput" accept="image/*" style="display: none;" />
+                    <p id="logoStatus" style="color: green; display: none;">✅ Logo attached!</p>
                 </div>
             </div>
             <div class="gen-input">
@@ -49,10 +57,10 @@
     <div id="footer">
         <div class="footer-content">
             <span>Powered by</span>
-            <a href="https://www.cloudinvitro.app/" target="_blank"><img src="https://www.cloudinvitro.app/public/assets/img/logo.png" alt="civ Logo"
-                    class="logo1"></a>
+            <a href="https://www.cloudinvitro.app/" target="_blank"><img
+                    src="https://www.cloudinvitro.app/public/assets/img/logo.png" alt="civ Logo" class="logo1"></a>
         </div>
-   </div>
+    </div>
 </body>
 
 </html>
