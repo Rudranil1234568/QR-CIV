@@ -7,8 +7,8 @@ body {
     justify-content: center;
     height: 100%;
     background-color: #f3f8fb; /* Soft background from admin theme */
-    margin-top: 80px;
-    margin-bottom: 80px;
+    margin-top: 50px;
+/*     margin-bottom: 80px; */
     width: 100%;
 }
 /* 
@@ -110,10 +110,10 @@ button:hover {
 /* Footer styles */
 #footer {
     margin-top: 20px;
-    position: fixed;
+/*     position: fixed;
     left: 0;
     bottom: 0;
-    width: 100%;
+    width: 100%; */
     background-color:  #f3f8fb4d;
     height: 50px;
     color: rgb(0, 0, 0);
